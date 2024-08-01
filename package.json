@@ -1,6 +1,6 @@
 {
   "name": "react-responsive-masonry",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "author": {
     "name": "Cédric Delpoux",
     "email": "cedric.delpoux@gmail.com"
@@ -27,7 +27,7 @@
     "url": "git+https://github.com/cedricdelpoux/react-responsive-masonry.git"
   },
   "scripts": {
-    "openssl:legacy": "NODE_OPTIONS=--openssl-legacy-provider",
+    "openssl:legacy": "cross-env NODE_OPTIONS=--openssl-legacy-provider",
     "build": "yarn run openssl:legacy nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
     "deploy": "gh-pages -d demo/dist",
@@ -46,6 +46,7 @@
     "@commitlint/config-conventional": "^14.1.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.3.1",
+    "cross-env": "^7.0.3",
     "cz-conventional-changelog": "3.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
